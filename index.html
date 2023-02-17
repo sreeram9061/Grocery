@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryBill</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <div class="container ">
+
+      <div class="darcktheamseting">
+        <div class="btn">
+            <div class="btnsild "></div>
+        </div>
+
+        <h4 class="lightblack">Light</h4>
+      </div>
+
+
+          <div class="grocerywindow">
+              <div class="heading">
+                  <h1 style="color: rgb(234, 105, 105);">Grocery List</h1>
+              </div>
+              <div class="values">
+                  <input id="input_1" class="input_11" type="text">
+
+                    <div class="contites">
+                        <div class="plus"> <img src="img/plus-small-svgrepo-com.svg" alt=""> </div>
+                        <h4 id="quant">0</h4>
+                        <div class="mines"> <img src="img/minus-small-svgrepo-com.svg" alt=""> </div>
+        
+                    </div>
+                  <input id="input_2" type="text">
+              </div>
+              <div class="underheading">
+                <h3 class="titlehead">Enter your list item</h3>
+                <h3 class="titlehead2" >Quantity</h3>
+                <h3 class="titlehead3">Price ₹</h3>
+              </div>
+             <div class="cartnumberbutton">
+                <div class="cart" >
+                    <img src="img/green-shopping-cart-10909.svg" alt="">
+                    <div class="count   ">
+                        <h4 id="cartlistno" >0</h4>
+                    </div>
+                    <h3><a style="text-decoration: none; color: rgb(177, 204, 122);"  href="#vist">View your list></a></h3>
+
+                </div>
+                
+                    <button id="clallallfunction">Add</button>
+                
+             </div>
+          </div>
+      
+        
+    </div>
+    <div class="secondcontainer" id="vist">
+        
+        <div class="listcontainer">
+           <div class="heading">
+            <h3>Grocery List</h3>
+           </div>
+
+            <div class="ulcontainer">
+                <ul class="listitems"></ul>
+            </div>
+            <div class="totalprice">
+                <h4>Total Price :</h4>
+                <div class="pricecount">
+                    <h4>₹ </h4>
+                    <h4 class="pricecount_text">-</h4>
+
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>Grocery shopping made easy. Spend more time enjoying delicious food, less time shopping.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        
+    </footer>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
