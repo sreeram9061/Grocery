@@ -66,7 +66,7 @@ addcartbutton.addEventListener('click',()=>{
           //console.log(a.value,b.v,c)
             const obj={
             prodect:a.value,
-            quatity:c,
+            quatitey:c,
             Price:parseInt(b.value)
           }
           
@@ -114,7 +114,10 @@ function makeLi(){
   Litems.map((el) =>{
       el.forEach(items =>{
         let liset =document.createElement('li')
-        liset.innerHTML =items
+
+        typeof items === 'string' ?
+        liset.innerHTML =items.charAt(0).toUpperCase()+items.slice(1) : liset.innerHTML =items
+        
         listitem.appendChild(liset)
       })
   })
