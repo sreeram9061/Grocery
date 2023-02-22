@@ -13,18 +13,20 @@ const cartnumber =document.getElementById('cartlistno')
 const bttn =document.querySelector('.btn')
 const bttnSlid = document.querySelector('.btnsild')
 let i =0
+
 bttn.addEventListener("click", ()=>{
   if(i==0){
-    bttnSlid.classList.add("btnslidddd")
-    i=1;
+   bttnSlid.style.transform =" translateX(27px)"
+    i=1
     lightMode()
   }else{
-    bttnSlid.classList.remove("btnslidddd")
+    bttnSlid.style.transform =" translateX(0px)"
     i=0
     remove()
-
   }
 })
+
+
 const container =document.querySelector('.container')
 
 function lightMode(){
@@ -68,7 +70,7 @@ addcartbutton.addEventListener('click',()=>{
             prodect:a.value,
             quatitey:c,
             Price:parseInt(b.value)
-          }
+      }
           
           arr.push(obj)
          
